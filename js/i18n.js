@@ -506,12 +506,13 @@ function setLanguage(lang) {
 
   document.documentElement.lang = lang;
 
-  // Update all links to carry language parameter
+  // Update all internal links to carry language parameter
   document.querySelectorAll("a[href]").forEach(a => {
     const href = a.getAttribute("href");
-    if (href && href.endsWith(".html") && !href.startsWith("http")) {
-      const base = href.split("?")[0];
-      a.setAttribute("href", base + "?lang=" + lang);
+    if (href && href.includes(".html") && !href.startsWith("http")) {
+      const base = href.split("?")[0].split("#")[0];
+      const hash = href.includes("#") ? "#" + href.split("#")[1].split("?")[0] : "";
+      a.setAttribute("href", base + "?lang=" + lang + hash);
     }
   });
 }
