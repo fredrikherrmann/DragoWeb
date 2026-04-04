@@ -239,12 +239,13 @@ a:hover {
 }
 
 .hero-logo-o {
-  height: 0.85em;
-  width: 0.85em;
+  height: clamp(38px, 5.2vw, 64px);
+  width: clamp(38px, 5.2vw, 64px);
   object-fit: contain;
   border-radius: 50%;
-  vertical-align: baseline;
-  margin-left: -0.05em;
+  vertical-align: middle;
+  margin-left: 0.05em;
+  margin-bottom: 0.08em;
 }
 
 .hero-logo-text {
