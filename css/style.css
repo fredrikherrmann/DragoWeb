@@ -84,8 +84,8 @@ a:hover {
 }
 
 .logo-icon {
-  width: 2em;
-  height: 2em;
+  width: 32px;
+  height: 32px;
   aspect-ratio: 1 / 1;
   object-fit: contain;
 }
@@ -157,8 +157,8 @@ a:hover {
 }
 
 .hero-logo-icon {
-  width: 1.2em;
-  height: 1.2em;
+  width: clamp(56px, 8vw, 88px);
+  height: clamp(56px, 8vw, 88px);
   aspect-ratio: 1 / 1;
   object-fit: contain;
 }
