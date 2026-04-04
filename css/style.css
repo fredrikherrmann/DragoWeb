@@ -83,11 +83,12 @@ a:hover {
   color: var(--text);
 }
 
-.logo-icon {
-  width: 32px;
-  height: 32px;
-  aspect-ratio: 1 / 1;
+.logo-o {
+  height: 1.1em;
+  width: 1.1em;
   object-fit: contain;
+  border-radius: 50%;
+  vertical-align: -0.22em;
 }
 
 .logo-text {
