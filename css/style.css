@@ -238,6 +238,15 @@ a:hover {
   object-fit: contain;
 }
 
+.hero-logo-o {
+  height: 0.85em;
+  width: 0.85em;
+  object-fit: contain;
+  border-radius: 50%;
+  vertical-align: baseline;
+  margin-left: -0.05em;
+}
+
 .hero-logo-text {
   font-family: var(--sans);
   font-size: clamp(44px, 6vw, 76px);
