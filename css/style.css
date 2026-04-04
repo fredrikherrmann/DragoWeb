@@ -22,6 +22,7 @@
   --border: #d5d5d5;
   --border-dim: #e5e5e5;
   --mono: 'SF Mono', 'Menlo', 'Monaco', 'Cascadia Code', 'Courier New', monospace;
+  --sans: -apple-system, 'Helvetica Neue', 'Arial', sans-serif;
 }
 
 html {
@@ -91,9 +92,10 @@ a:hover {
 }
 
 .logo-text {
-  font-size: 15px;
-  font-weight: 600;
-  letter-spacing: 5px;
+  font-family: var(--sans);
+  font-size: 16px;
+  font-weight: 500;
+  letter-spacing: 6px;
   text-transform: uppercase;
 }
 
@@ -238,9 +240,10 @@ a:hover {
 }
 
 .hero-logo-text {
-  font-size: clamp(40px, 6vw, 72px);
-  font-weight: 700;
-  letter-spacing: 0.25em;
+  font-family: var(--sans);
+  font-size: clamp(44px, 6vw, 76px);
+  font-weight: 400;
+  letter-spacing: 0.3em;
   color: var(--text);
 }
 
@@ -316,8 +319,9 @@ a:hover {
 }
 
 .section-title {
+  font-family: var(--sans);
   font-size: clamp(22px, 3vw, 32px);
-  font-weight: 600;
+  font-weight: 400;
   letter-spacing: 2px;
   color: var(--text);
 }
@@ -377,6 +381,29 @@ a:hover {
 .projects-section {
   background: var(--bg-surface);
   padding: 80px 5vw;
+  position: relative;
+}
+
+/* Mjuka toningar mellan sektioner */
+.projects-section::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 80px;
+  background: linear-gradient(to bottom, var(--bg), var(--bg-surface));
+  pointer-events: none;
+}
+.projects-section::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 80px;
+  background: linear-gradient(to top, var(--bg), var(--bg-surface));
+  pointer-events: none;
 }
 
 .projects-inner {
@@ -600,8 +627,9 @@ a:hover {
 }
 
 .product-hero-title {
+  font-family: var(--sans);
   font-size: clamp(28px, 4vw, 40px);
-  font-weight: 600;
+  font-weight: 400;
   letter-spacing: 4px;
 }
 
