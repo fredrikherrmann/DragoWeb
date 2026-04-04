@@ -84,8 +84,8 @@ a:hover {
 }
 
 .logo-icon {
-  width: 32px;
-  height: 32px;
+  width: 2em;
+  height: 2em;
   aspect-ratio: 1 / 1;
   object-fit: contain;
 }
@@ -157,8 +157,8 @@ a:hover {
 }
 
 .hero-logo-icon {
-  width: 88px;
-  height: 88px;
+  width: 1.2em;
+  height: 1.2em;
   aspect-ratio: 1 / 1;
   object-fit: contain;
 }
@@ -476,8 +476,8 @@ a:hover {
 /* --- Responsive --- */
 @media (max-width: 768px) {
   .hero-logo-icon {
-    width: 56px;
-    height: 56px;
+    width: 1.2em;
+    height: 1.2em;
   }
   .hero-logo {
     gap: 16px;
@@ -530,8 +530,8 @@ a:hover {
 
 @media (max-width: 480px) {
   .hero-logo-icon {
-    width: 44px;
-    height: 44px;
+    width: 1.2em;
+    height: 1.2em;
   }
   .hero {
     padding: 120px 5vw 80px;
