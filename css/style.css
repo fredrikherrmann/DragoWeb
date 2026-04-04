@@ -240,12 +240,12 @@ a:hover {
 }
 
 .hero-logo-o {
-  height: 0.72em;
-  width: 0.72em;
+  height: 0.76em;
+  width: 0.76em;
   object-fit: contain;
   border-radius: 50%;
-  vertical-align: 0.05em;
-  margin-left: 0.15em;
+  vertical-align: 0.04em;
+  margin-left: -0.1em;
 }
 
 .hero-logo-text {
