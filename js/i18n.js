@@ -464,7 +464,12 @@ function getCookie(name) {
 function detectLanguage() {
   const urlParams = new URLSearchParams(window.location.search);
   const urlLang = urlParams.get("lang");
-  if (urlLang && translations[urlLang]) return urlLang;
+  if (urlLang && translations[urlLang]) {
+    // Remove ?lang= from URL bar so it doesn't persist on reload
+    const cleanUrl = window.location.pathname + window.location.hash;
+    window.history.replaceState({}, "", cleanUrl);
+    return urlLang;
+  }
 
   const cookieLang = getCookie("drago-lang");
   if (cookieLang && translations[cookieLang]) return cookieLang;
