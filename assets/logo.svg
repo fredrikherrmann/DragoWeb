@@ -1,0 +1,41 @@
+<svg width="680" height="680" viewBox="0 0 680 680" xmlns="http://www.w3.org/2000/svg">
+<defs>
+<linearGradient id="skyGrad" x1="0" y1="0" x2="0" y2="1">
+<stop offset="0%" stop-color="#0d0221"/>
+<stop offset="15%" stop-color="#1a0533"/>
+<stop offset="30%" stop-color="#4a0e4e"/>
+<stop offset="45%" stop-color="#89216b"/>
+<stop offset="55%" stop-color="#c62368"/>
+<stop offset="65%" stop-color="#e8451c"/>
+<stop offset="75%" stop-color="#f0712a"/>
+<stop offset="82%" stop-color="#f4a623"/>
+<stop offset="90%" stop-color="#f8d12e"/>
+<stop offset="100%" stop-color="#fcee21"/>
+</linearGradient>
+<clipPath id="circleClip">
+<circle cx="340" cy="340" r="236"/>
+</clipPath>
+</defs>
+
+<circle cx="340" cy="340" r="270" fill="#1a1a1a"/>
+<circle cx="340" cy="340" r="236" fill="url(#skyGrad)"/>
+
+<g clip-path="url(#circleClip)">
+<rect x="100" y="430" width="480" height="4" fill="#0d0221" opacity="0.5"/>
+<rect x="100" y="445" width="480" height="3.5" fill="#0d0221" opacity="0.45"/>
+<rect x="100" y="458" width="480" height="3" fill="#0d0221" opacity="0.4"/>
+<rect x="100" y="469" width="480" height="2.5" fill="#0d0221" opacity="0.35"/>
+<rect x="100" y="479" width="480" height="2" fill="#0d0221" opacity="0.3"/>
+<rect x="100" y="488" width="480" height="2" fill="#0d0221" opacity="0.25"/>
+<rect x="100" y="496" width="480" height="1.5" fill="#0d0221" opacity="0.2"/>
+<rect x="100" y="503" width="480" height="1.5" fill="#0d0221" opacity="0.18"/>
+<rect x="100" y="510" width="480" height="1.2" fill="#0d0221" opacity="0.15"/>
+<rect x="100" y="516" width="480" height="1" fill="#0d0221" opacity="0.12"/>
+<rect x="100" y="521" width="480" height="1" fill="#0d0221" opacity="0.1"/>
+</g>
+
+<circle cx="340" cy="340" r="236" fill="none" stroke="#ffffff" stroke-width="3"/>
+
+<text x="340" y="325" text-anchor="middle" dominant-baseline="central" font-family="'Courier New', monospace" font-size="280" font-weight="700" fill="#0d0221">&gt;_</text>
+
+</svg>

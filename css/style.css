@@ -85,16 +85,17 @@ a:hover {
   color: var(--text);
 }
 
+.logo-icon {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+}
+
 .logo-text {
   font-size: 20px;
   font-weight: 700;
   letter-spacing: 6px;
   text-transform: uppercase;
-}
-
-.logo-dragon {
-  width: 36px;
-  height: 36px;
 }
 
 .nav {
@@ -156,16 +157,17 @@ a:hover {
   margin-bottom: 40px;
 }
 
+.hero-logo-icon {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+}
+
 .hero-logo-text {
   font-size: 64px;
   font-weight: 700;
   letter-spacing: 16px;
   color: var(--text);
-}
-
-.hero-logo-dragon {
-  width: 80px;
-  height: 80px;
 }
 
 .hero-tagline {
@@ -482,9 +484,9 @@ a:hover {
     font-size: 36px;
     letter-spacing: 10px;
   }
-  .hero-logo-dragon {
-    width: 50px;
-    height: 50px;
+  .hero-logo-icon {
+    width: 60px;
+    height: 60px;
   }
   .about-grid,
   .project-cards,
@@ -527,9 +529,9 @@ a:hover {
     font-size: 28px;
     letter-spacing: 8px;
   }
-  .hero-logo-dragon {
-    width: 40px;
-    height: 40px;
+  .hero-logo-icon {
+    width: 48px;
+    height: 48px;
   }
   .hero {
     padding: 100px 20px 60px;
