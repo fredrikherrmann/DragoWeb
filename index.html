@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Drago Konsult AB — Mjukvarukonsult</title>
+  <meta name="description" content="Drago Konsult AB — Mjukvarulösningar och konsulttjänster i Göteborg. DragoRS, PFterminal och mer.">
+  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- Header -->
+  <header class="header">
+    <div class="header-inner">
+      <a href="#" class="logo">
+        <span class="logo-text">Drago</span>
+        <img src="assets/dragon-logo.svg" alt="Drago drake" class="logo-dragon">
+      </a>
+      <button class="menu-toggle" aria-label="Meny" onclick="document.querySelector('.nav').classList.toggle('open')">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav">
+        <li><a href="#om">Om oss</a></li>
+        <li><a href="#projekt">Projekt</a></li>
+        <li><a href="#kontakt">Kontakt</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section class="hero">
+    <div class="grid-bg"></div>
+    <div class="hero-content">
+      <div class="hero-logo">
+        <span class="hero-logo-text">DRAGO</span>
+        <img src="assets/dragon-logo.svg" alt="Drago drake" class="hero-logo-dragon">
+      </div>
+      <p class="hero-tagline">Konsult &middot; Mjukvara &middot; Innovation</p>
+      <p class="hero-description">
+        Skräddarsydda mjukvarulösningar med fokus på kvalitet,
+        enkelhet och precision. Från koncept till produktion.
+      </p>
+      <a href="#projekt" class="hero-cta">
+        <span class="terminal-prompt"><span class="path">~/drago</span> <span class="symbol">$</span></span>
+        visa projekt<span class="cursor"></span>
+      </a>
+    </div>
+    <div class="scroll-indicator">
+      scroll<br>&#8595;
+    </div>
+  </section>
+
+  <!-- Om oss -->
+  <section class="section" id="om">
+    <div class="section-header">
+      <p class="section-label">// Om oss</p>
+      <h2 class="section-title">Drago Konsult AB</h2>
+      <div class="section-divider"></div>
+    </div>
+    <div class="about-grid">
+      <div class="about-text">
+        <p>
+          Drago Konsult AB är ett svenskt mjukvarukonsultbolag baserat i
+          Göteborgsområdet. Vi bygger verktyg och system som löser riktiga
+          problem — utan onödig komplexitet.
+        </p>
+        <p>
+          Med en filosofi rotad i terminal-estetik och ingenjörsprecision
+          skapar vi produkter som är snabba, tillförlitliga och eleganta.
+          Varje rad kod skrivs med samma omsorg som ett handverktyg —
+          byggt för att hålla.
+        </p>
+      </div>
+      <div class="about-info">
+        <div class="info-row">
+          <span class="info-label">Bolag</span>
+          <span class="info-value">Drago Konsult AB</span>
+        </div>
+        <div class="info-row">
+          <span class="info-label">Org.nr</span>
+          <span class="info-value">559538-3778</span>
+        </div>
+        <div class="info-row">
+          <span class="info-label">Adress</span>
+          <span class="info-value">Överåsvägen 11, 443 61 Stenkullen</span>
+        </div>
+        <div class="info-row">
+          <span class="info-label">Kontakt</span>
+          <span class="info-value">Fredrik Herrmann</span>
+        </div>
+        <div class="info-row">
+          <span class="info-label">Stack</span>
+          <span class="info-value">JS / Rust / Node.js / React</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projekt -->
+  <section class="projects-section" id="projekt">
+    <div class="projects-inner">
+      <div class="section-header">
+        <p class="section-label">// Projekt</p>
+        <h2 class="section-title">Vad vi bygger</h2>
+        <div class="section-divider"></div>
+      </div>
+      <div class="project-cards">
+        <div class="project-card">
+          <h3 class="project-name">DragoRS</h3>
+          <span class="project-tag">Webbaserad</span>
+          <p class="project-desc">
+            Skaderapportgenerator för fuktskador och byggnadsbesiktning.
+            Komplett system med flerspråkigt stöd, PDF-export,
+            mätprotokoll och administratörspanel.
+          </p>
+          <div class="project-tech">
+            <span class="tech-badge">React</span>
+            <span class="tech-badge">Node.js</span>
+            <span class="tech-badge">PostgreSQL</span>
+            <span class="tech-badge">Railway</span>
+            <span class="tech-badge">Vercel</span>
+          </div>
+        </div>
+        <div class="project-card">
+          <h3 class="project-name">PFterminal</h3>
+          <span class="project-tag">Desktop</span>
+          <p class="project-desc">
+            Personlig ekonomi-app med terminal-estetik. Manuell inmatning
+            för medvetenhet om varje transaktion. Lokal lagring,
+            ingen molnsynk. Byggt med Tauri v2.
+          </p>
+          <div class="project-tech">
+            <span class="tech-badge">Vanilla JS</span>
+            <span class="tech-badge">Tauri v2</span>
+            <span class="tech-badge">Rust</span>
+            <span class="tech-badge">macOS</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Kontakt -->
+  <section class="section" id="kontakt">
+    <div class="section-header">
+      <p class="section-label">// Kontakt</p>
+      <h2 class="section-title">Hör av dig</h2>
+      <div class="section-divider"></div>
+    </div>
+    <div class="contact-grid">
+      <div class="contact-text">
+        <p>
+          Har du ett projekt som behöver utvecklas? Eller vill du veta
+          mer om våra verktyg? Hör av dig — vi svarar snabbt.
+        </p>
+        <p class="terminal-prompt" style="margin-top: 24px;">
+          <span class="path">~/drago</span> <span class="symbol">$</span> mail fredrik@drago.se<span class="cursor"></span>
+        </p>
+      </div>
+      <ul class="contact-details">
+        <li>
+          <span class="label">E-post</span>
+          <a href="mailto:fredrik@drago.se">fredrik@drago.se</a>
+        </li>
+        <li>
+          <span class="label">Telefon</span>
+          <span>0709-466232</span>
+        </li>
+        <li>
+          <span class="label">Webb</span>
+          <a href="https://www.drago.se">www.drago.se</a>
+        </li>
+        <li>
+          <span class="label">Plats</span>
+          <span>Stenkullen, Göteborg</span>
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-inner">
+      <span class="footer-text">&copy; 2026 Drago Konsult AB</span>
+      <ul class="footer-links">
+        <li><a href="#om">Om</a></li>
+        <li><a href="#projekt">Projekt</a></li>
+        <li><a href="#kontakt">Kontakt</a></li>
+      </ul>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
