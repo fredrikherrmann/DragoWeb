@@ -481,12 +481,23 @@ a:hover {
   cursor: pointer;
 }
 
+.project-urls {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 16px;
+}
+
 .project-url {
   display: block;
   margin-top: 16px;
   font-size: 11px;
   color: var(--text-muted);
   letter-spacing: 1px;
+}
+
+.project-urls .project-url {
+  margin-top: 0;
 }
 
 .project-desc {
