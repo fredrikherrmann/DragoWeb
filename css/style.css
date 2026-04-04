@@ -236,11 +236,11 @@ a:hover {
 }
 
 .hero-logo-o {
-  height: 0.95em;
-  width: 0.95em;
+  height: 1.1em;
+  width: 1.1em;
   object-fit: contain;
   border-radius: 50%;
-  vertical-align: -0.12em;
+  vertical-align: -0.22em;
 }
 
 .hero-logo-text {
