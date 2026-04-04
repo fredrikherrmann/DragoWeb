@@ -20,8 +20,13 @@
         <span class="logo-text">Drago</span>
         <img src="assets/logo.png" alt="Drago" class="logo-icon">
       </a>
+      <button class="menu-toggle" aria-label="Meny" onclick="document.querySelector('.nav').classList.toggle('open')">
+        <span></span><span></span><span></span>
+      </button>
       <ul class="nav">
         <li><a href="index.html">Hem</a></li>
+        <li><a href="index.html#projekt">Projekt</a></li>
+        <li><a href="index.html#kontakt">Kontakt</a></li>
       </ul>
     </div>
   </header>
@@ -66,7 +71,8 @@
   </section>
 
   <!-- Instruktionsbok -->
-  <section class="section" id="instruktionsbok">
+  <section class="projects-section" id="instruktionsbok">
+    <div class="projects-inner">
     <div class="section-header">
       <p class="section-label">// Instruktionsbok</p>
       <h2 class="section-title">Kom igång med PFterminal</h2>
@@ -143,6 +149,7 @@
       </div>
 
     </div>
+    </div>
   </section>
 
   <!-- Footer -->
@@ -155,5 +162,6 @@
     </div>
   </footer>
 
+  <script src="js/main.js"></script>
 </body>
 </html>

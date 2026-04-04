@@ -224,13 +224,13 @@ a:hover {
 
 /* --- Sections --- */
 .section {
-  padding: 140px 5vw;
+  padding: 80px 5vw;
   max-width: 1400px;
   margin: 0 auto;
 }
 
 .section-header {
-  margin-bottom: 80px;
+  margin-bottom: 40px;
 }
 
 .section-label {
@@ -302,7 +302,7 @@ a:hover {
 /* --- Projekt / Produkter --- */
 .projects-section {
   background: var(--bg-surface);
-  padding: 140px 5vw;
+  padding: 80px 5vw;
 }
 
 .projects-inner {
@@ -504,14 +504,9 @@ a:hover {
   50% { transform: translateX(-50%) translateY(6px); }
 }
 
-/* --- Grid bg (disabled) --- */
-.grid-bg {
-  display: none;
-}
-
 /* --- Product page --- */
 .product-hero {
-  padding: 160px 5vw 80px;
+  padding: 100px 5vw 40px;
   max-width: 1400px;
   margin: 0 auto;
 }
@@ -650,20 +645,27 @@ a:hover {
 /* --- Responsive --- */
 @media (max-width: 768px) {
   .hero-logo-icon {
-    width: 1.2em;
-    height: 1.2em;
+    width: clamp(48px, 12vw, 64px);
+    height: clamp(48px, 12vw, 64px);
   }
   .hero-logo {
-    gap: 16px;
+    gap: 12px;
   }
   .about-grid,
   .project-cards,
-  .contact-grid {
+  .contact-grid,
+  .download-grid {
     grid-template-columns: 1fr;
+  }
+  .project-cards {
+    max-width: 100%;
+  }
+  .download-grid {
+    max-width: 100%;
   }
   .about-grid,
   .contact-grid {
-    gap: 40px;
+    gap: 32px;
   }
   .nav {
     display: none;
@@ -689,29 +691,48 @@ a:hover {
     gap: 20px;
   }
   .section {
-    padding: 80px 5vw;
+    padding: 60px 5vw;
   }
   .projects-section {
-    padding: 80px 5vw;
+    padding: 60px 5vw;
   }
   .section-header {
-    margin-bottom: 48px;
+    margin-bottom: 32px;
   }
   .project-card {
-    padding: 32px;
+    padding: 28px;
+  }
+  .product-hero {
+    padding: 90px 5vw 32px;
+  }
+  .product-hero-icon {
+    width: 56px;
+    height: 56px;
+  }
+  .contact-details li {
+    border-bottom-color: var(--border);
   }
 }
 
 @media (max-width: 480px) {
   .hero-logo-icon {
-    width: 1.2em;
-    height: 1.2em;
+    width: 44px;
+    height: 44px;
   }
   .hero {
-    padding: 120px 5vw 80px;
+    padding: 110px 5vw 60px;
   }
   .hero-logo {
-    gap: 12px;
-    margin-bottom: 40px;
+    gap: 10px;
+    margin-bottom: 32px;
+  }
+  .hero-description {
+    margin-bottom: 32px;
+  }
+  .section {
+    padding: 48px 5vw;
+  }
+  .projects-section {
+    padding: 48px 5vw;
   }
 }
