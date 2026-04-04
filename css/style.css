@@ -18,7 +18,7 @@
   --text: #111111;
   --text-dim: #555555;
   --text-muted: #999999;
-  --accent: #00cc66;
+  --accent: #888888;
   --border: #d5d5d5;
   --border-dim: #e5e5e5;
   --mono: 'SF Mono', 'Menlo', 'Monaco', 'Cascadia Code', 'Courier New', monospace;
@@ -79,7 +79,7 @@ a:hover {
 .logo {
   display: flex;
   align-items: center;
-  gap: 8px;
+  gap: 6px;
   text-decoration: none;
   color: var(--text);
 }
@@ -228,7 +228,7 @@ a:hover {
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 16px;
+  gap: 10px;
   margin-bottom: 56px;
 }
 
@@ -409,6 +409,8 @@ a:hover {
 .projects-inner {
   max-width: 1400px;
   margin: 0 auto;
+  position: relative;
+  z-index: 1;
 }
 
 .project-cards {
@@ -524,7 +526,7 @@ a:hover {
 
 .contact-details li {
   padding: 16px 0;
-  border-bottom: 1px solid var(--border-dim);
+  border-bottom: 1px solid var(--border);
   font-size: 13px;
   display: flex;
   gap: 20px;

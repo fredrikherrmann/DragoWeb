@@ -492,10 +492,10 @@ function setLanguage(lang) {
 
   document.querySelectorAll("[data-i18n]").forEach(el => {
     const key = el.getAttribute("data-i18n");
-    if (t[key] !== undefined) {
-      el.textContent = t[key];
-    } else if (sv[key] !== undefined) {
-      el.textContent = sv[key];
+    const value = t[key] !== undefined ? t[key] : sv[key];
+    if (value !== undefined) {
+      // Use textContent for simple elements, but preserve if no child nodes need HTML
+      el.textContent = value;
     }
   });
 
