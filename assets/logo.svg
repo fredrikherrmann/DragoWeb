@@ -17,9 +17,10 @@
 </clipPath>
 </defs>
 
-<circle cx="340" cy="340" r="270" fill="#1a1a1a"/>
+<!-- Gradient fill -->
 <circle cx="340" cy="340" r="236" fill="url(#skyGrad)"/>
 
+<!-- Scan lines -->
 <g clip-path="url(#circleClip)">
 <rect x="100" y="430" width="480" height="4" fill="#0d0221" opacity="0.5"/>
 <rect x="100" y="445" width="480" height="3.5" fill="#0d0221" opacity="0.45"/>
@@ -34,8 +35,10 @@
 <rect x="100" y="521" width="480" height="1" fill="#0d0221" opacity="0.1"/>
 </g>
 
-<circle cx="340" cy="340" r="237.5" fill="none" stroke="#111111" stroke-width="6"/>
+<!-- Black border ring — single stroke, no overlapping circles -->
+<circle cx="340" cy="340" r="253" fill="none" stroke="#1a1a1a" stroke-width="38"/>
 
+<!-- Terminal prompt -->
 <text x="340" y="325" text-anchor="middle" dominant-baseline="central" font-family="'Courier New', monospace" font-size="280" font-weight="700" fill="#0d0221">&gt;_</text>
 
 </svg>
