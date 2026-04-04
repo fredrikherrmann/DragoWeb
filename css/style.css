@@ -84,11 +84,11 @@ a:hover {
 }
 
 .logo-o {
-  height: 1.3em;
-  width: 1.3em;
+  height: 0.94em;
+  width: 0.94em;
   object-fit: contain;
   border-radius: 50%;
-  vertical-align: -0.3em;
+  vertical-align: -0.13em;
 }
 
 .logo-text {
