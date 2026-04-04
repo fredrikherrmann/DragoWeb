@@ -13,12 +13,12 @@
 <stop offset="100%" stop-color="#fcee21"/>
 </linearGradient>
 <clipPath id="circleClip">
-<circle cx="340" cy="340" r="236"/>
+<circle cx="340" cy="340" r="234"/>
 </clipPath>
 </defs>
 
-<!-- Gradient fill -->
-<circle cx="340" cy="340" r="236" fill="url(#skyGrad)"/>
+<!-- Single circle: gradient fill + black stroke border -->
+<circle cx="340" cy="340" r="234" fill="url(#skyGrad)" stroke="#1a1a1a" stroke-width="36"/>
 
 <!-- Scan lines -->
 <g clip-path="url(#circleClip)">
@@ -34,9 +34,6 @@
 <rect x="100" y="516" width="480" height="1" fill="#0d0221" opacity="0.12"/>
 <rect x="100" y="521" width="480" height="1" fill="#0d0221" opacity="0.1"/>
 </g>
-
-<!-- Black border ring — single stroke, no overlapping circles -->
-<circle cx="340" cy="340" r="253" fill="none" stroke="#1a1a1a" stroke-width="38"/>
 
 <!-- Terminal prompt -->
 <text x="340" y="325" text-anchor="middle" dominant-baseline="central" font-family="'Courier New', monospace" font-size="280" font-weight="700" fill="#0d0221">&gt;_</text>
