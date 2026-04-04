@@ -225,10 +225,11 @@ a:hover {
 
 .hero-logo {
   display: flex;
-  align-items: center;
+  align-items: baseline;
   justify-content: center;
-  gap: 10px;
+  gap: 0;
   margin-bottom: 56px;
+  font-size: clamp(44px, 6vw, 76px);
 }
 
 .hero-logo-icon {
@@ -239,17 +240,17 @@ a:hover {
 }
 
 .hero-logo-o {
-  height: clamp(40px, 5.5vw, 70px);
-  width: clamp(40px, 5.5vw, 70px);
+  height: 0.72em;
+  width: 0.72em;
   object-fit: contain;
   border-radius: 50%;
-  vertical-align: middle;
-  margin-left: 0.1em;
+  vertical-align: 0.05em;
+  margin-left: 0.15em;
 }
 
 .hero-logo-text {
   font-family: var(--sans);
-  font-size: clamp(44px, 6vw, 76px);
+  font-size: inherit;
   font-weight: 400;
   letter-spacing: 0.3em;
   color: var(--text);
