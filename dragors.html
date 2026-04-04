@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DragoRS</title>
+  <meta name="description" content="DragoRS — Rapportgenerator för bygg, fukt- och skadebranschen. PDF-export, mätprotokoll, flerspråkigt stöd.">
+  <link rel="icon" type="image/svg+xml" href="assets/logo.svg">
+  <link rel="icon" type="image/x-icon" href="assets/favicon.ico">
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32x32.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="assets/apple-touch-icon.png">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- Header -->
+  <header class="header">
+    <div class="header-inner">
+      <a href="index.html" class="logo">
+        <span class="logo-text">Drag<img src="assets/logo.png" alt="O" class="logo-o"></span>
+      </a>
+      <button class="menu-toggle" aria-label="Meny" onclick="document.querySelector('.nav').classList.toggle('open')">
+        <span></span><span></span><span></span>
+      </button>
+      <div class="header-right">
+        <ul class="nav">
+          <li><a href="index.html" data-i18n="nav_home">Hem</a></li>
+          <li><a href="index.html#projekt" data-i18n="nav_projects">Projekt</a></li>
+          <li><a href="index.html#kontakt" data-i18n="nav_contact">Kontakt</a></li>
+        </ul>
+        <div class="lang-selector" id="langSelector"></div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section class="product-hero">
+    <div class="product-hero-inner">
+      <img src="assets/dragors-icon.png" alt="DragoRS" class="product-hero-icon">
+      <div>
+        <h1 class="product-hero-title">DragoRS</h1>
+        <p class="product-hero-subtitle">DRAGO REPORT SYSTEM</p>
+      </div>
+    </div>
+    <p class="product-hero-desc" data-i18n="rs_hero_desc">
+      Komplett rapportgenerator för bygg, projektledare och fukt- och skadebranschen.
+      Skapa professionella rapporter med mätprotokoll, bildhantering, PDF-export
+      och flerspråkigt stöd — direkt i webbläsaren.
+    </p>
+  </section>
+
+  <!-- Features -->
+  <section class="projects-section">
+    <div class="projects-inner">
+      <div class="section-header">
+        <p class="section-label" data-i18n="rs_section_features">// Funktioner</p>
+        <h2 class="section-title" data-i18n="rs_title_features">Allt du behöver i fält och på kontoret</h2>
+        <div class="section-divider"></div>
+      </div>
+      <div class="feature-grid">
+
+        <div class="feature-card">
+          <div class="feature-number">01</div>
+          <h3 class="feature-title" data-i18n="rs_feat1_title">Rapportgenerator</h3>
+          <p class="feature-desc" data-i18n="rs_feat1_desc">Skapa kompletta fukt-, skade- och besiktningsrapporter med strukturerade sektioner, fri text och smarta mallar.</p>
+        </div>
+
+        <div class="feature-card">
+          <div class="feature-number">02</div>
+          <h3 class="feature-title" data-i18n="rs_feat2_title">PDF-export</h3>
+          <p class="feature-desc" data-i18n="rs_feat2_desc">Generera professionella PDF-rapporter med ett klick. Logga, sidhuvud, sidnumrering och formatering — redo att skicka till kund.</p>
+        </div>
+
+        <div class="feature-card">
+          <div class="feature-number">03</div>
+          <h3 class="feature-title" data-i18n="rs_feat3_title">Mätprotokoll</h3>
+          <p class="feature-desc" data-i18n="rs_feat3_desc">Integrera mätvärden från fuktmätningar direkt i rapporten. Stöd för Celsicom och SuperVision loggermätningar.</p>
+        </div>
+
+        <div class="feature-card">
+          <div class="feature-number">04</div>
+          <h3 class="feature-title" data-i18n="rs_feat4_title">Bildhantering</h3>
+          <p class="feature-desc" data-i18n="rs_feat4_desc">Lägg till bilder direkt från kameran eller filsystemet. Beskärning, bildtexter och automatisk numrering i rapporten.</p>
+        </div>
+
+        <div class="feature-card">
+          <div class="feature-number">05</div>
+          <h3 class="feature-title" data-i18n="rs_feat5_title">Flerspråkigt stöd</h3>
+          <p class="feature-desc" data-i18n="rs_feat5_desc">Skriv rapporter på svenska, engelska och fler språk. Byt språk per rapport — perfekt för internationella uppdrag.</p>
+        </div>
+
+        <div class="feature-card">
+          <div class="feature-number">06</div>
+          <h3 class="feature-title" data-i18n="rs_feat6_title">Smart sökning</h3>
+          <p class="feature-desc" data-i18n="rs_feat6_desc">Hitta rapporter, projekt och kunder med kraftfull sökning. Filtrera på datum, status, typ och fritext.</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Skärmdumpar -->
+  <section class="section">
+    <div class="section-header">
+      <p class="section-label" data-i18n="rs_section_screenshots">// I praktiken</p>
+      <h2 class="section-title" data-i18n="rs_title_screenshots">Så ser det ut</h2>
+      <div class="section-divider"></div>
+    </div>
+    <div class="screenshot-grid">
+      <div class="screenshot-card">
+        <div class="screenshot-placeholder">
+          <span>Skärmdump 1</span>
+        </div>
+        <p class="screenshot-caption" data-i18n="rs_screen1">Rapportöversikt — alla projekt samlade</p>
+      </div>
+      <div class="screenshot-card">
+        <div class="screenshot-placeholder">
+          <span>Skärmdump 2</span>
+        </div>
+        <p class="screenshot-caption" data-i18n="rs_screen2">Rapportredigering med sektioner och bilder</p>
+      </div>
+      <div class="screenshot-card">
+        <div class="screenshot-placeholder">
+          <span>Skärmdump 3</span>
+        </div>
+        <p class="screenshot-caption" data-i18n="rs_screen3">PDF-export — professionellt resultat</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Tech & CTA -->
+  <section class="projects-section">
+    <div class="projects-inner">
+      <div class="section-header">
+        <p class="section-label" data-i18n="rs_section_tech">// Teknologi</p>
+        <h2 class="section-title" data-i18n="rs_title_tech">Byggt för prestanda</h2>
+        <div class="section-divider"></div>
+      </div>
+      <div class="tech-overview">
+        <div class="tech-overview-badges">
+          <span class="tech-badge">React</span>
+          <span class="tech-badge">Node.js</span>
+          <span class="tech-badge">PostgreSQL</span>
+          <span class="tech-badge">Railway</span>
+          <span class="tech-badge">Vercel</span>
+        </div>
+        <p class="tech-overview-desc" data-i18n="rs_tech_desc">
+          Webbaserad plattform — fungerar på dator, surfplatta och mobil.
+          Ingen installation krävs. Dina rapporter lagras säkert i molnet
+          och är tillgängliga var du än befinner dig.
+        </p>
+        <a href="https://www.dragors.com" target="_blank" rel="noopener" class="download-btn" data-i18n="rs_cta">Gå till DragoRS</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-inner">
+      <span class="footer-text">&copy; 2026 Drago Konsult AB</span>
+      <ul class="footer-links">
+        <li><a href="index.html" data-i18n="nav_home">Hem</a></li>
+        <li><a href="index.html#projekt" data-i18n="nav_projects">Projekt</a></li>
+        <li><a href="index.html#kontakt" data-i18n="nav_contact">Kontakt</a></li>
+        <li><a href="privacy.html">Integritetspolicy</a></li>
+      </ul>
+    </div>
+  </footer>
+
+  <script src="js/i18n.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
