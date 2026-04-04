@@ -248,8 +248,8 @@ a:hover {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  height: 1.15em;
-  width: 1.15em;
+  height: 1.05em;
+  width: 1.05em;
   object-fit: contain;
   border-radius: 50%;
 }
