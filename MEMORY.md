@@ -28,6 +28,7 @@ Ersätter befintlig WordPress-sida på drago.se. LIVE sedan 2026-04-04.
 ## Nuvarande status (2026-04-04)
 - LIVE på drago.se via GitHub Pages
 - Startsida (index.html): Hero med DRAG[logo], Projekt (DragoRS + PFterminal), Om oss, Kontakt
+- DragoRS-sida (dragors.html): Hero, 9 feature-kort, tech stack, CTA till dragors.com
 - PFterminal-sida (pfterminal.html): Nedladdning (.dmg v0.1.0), instruktionsbok (webb + PDF)
 - Integritetspolicy (privacy.html)
 - Logo-koncept: Synthwave-gradient terminal-ikon (>_) som "O" i DRAGO
@@ -35,12 +36,13 @@ Ersätter befintlig WordPress-sida på drago.se. LIVE sedan 2026-04-04.
 - 12 språk med auto-detect och dropdown i header
 - Mobilanpassad (responsiva breakpoints)
 - Mjuka gradient-toningar mellan sektioner (TE-stil)
+- DNS: 4 A-poster (185.199.108-111.153) + CNAME www → fredrikherrmann.github.io
+- HTTPS: Enforce HTTPS väntar på DNS-check (konfigurerat 2026-04-04)
 
 ---
 
 ## På gång
-- **DragoRS produktsida** — dragors.html med features, bilder/skärmdumpar från programmet, "läs mer"
-- Eventuellt: dragors.com peka hit eller egen sida
+- **HTTPS** — Kryssa i "Enforce HTTPS" i GitHub Pages när DNS-checken blir grön
 
 ---
 
@@ -77,6 +79,7 @@ Ersätter befintlig WordPress-sida på drago.se. LIVE sedan 2026-04-04.
 ```
 DragoWeb/
 ├── index.html          — Startsida
+├── dragors.html        — DragoRS produktsida
 ├── pfterminal.html     — PFterminal produktsida
 ├── privacy.html        — Integritetspolicy
 ├── CNAME               — GitHub Pages custom domain
