@@ -451,10 +451,17 @@ const langNames = {
   it: "IT", pt: "PT", nl: "NL", da: "DA", no: "NO", fi: "FI", pl: "PL"
 };
 
-// Detect language: localStorage > browser > default (sv)
+// Detect language: URL param > localStorage > browser > default (sv)
 function detectLanguage() {
-  const saved = localStorage.getItem("drago-lang");
-  if (saved && translations[saved]) return saved;
+  // Check URL parameter first (?lang=en)
+  const urlParams = new URLSearchParams(window.location.search);
+  const urlLang = urlParams.get("lang");
+  if (urlLang && translations[urlLang]) return urlLang;
+
+  try {
+    const saved = localStorage.getItem("drago-lang");
+    if (saved && translations[saved]) return saved;
+  } catch (e) { /* localStorage blocked */ }
 
   const browserLang = (navigator.language || "sv").split("-")[0].toLowerCase();
   if (translations[browserLang]) return browserLang;
@@ -465,7 +472,7 @@ function detectLanguage() {
 // Apply translations
 function setLanguage(lang) {
   if (!translations[lang]) lang = "sv";
-  localStorage.setItem("drago-lang", lang);
+  try { localStorage.setItem("drago-lang", lang); } catch (e) {}
 
   const t = translations[lang];
   // Fallback to Swedish for missing keys
@@ -486,6 +493,15 @@ function setLanguage(lang) {
   });
 
   document.documentElement.lang = lang;
+
+  // Update all links to carry language parameter
+  document.querySelectorAll("a[href]").forEach(a => {
+    const href = a.getAttribute("href");
+    if (href && href.endsWith(".html") && !href.startsWith("http")) {
+      const base = href.split("?")[0];
+      a.setAttribute("href", base + "?lang=" + lang);
+    }
+  });
 }
 
 // Build language selector dropdown
