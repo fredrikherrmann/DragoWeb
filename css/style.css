@@ -236,22 +236,12 @@ a:hover {
   object-fit: contain;
 }
 
-.hero-logo-o-wrap {
-  position: relative;
-  display: inline-block;
-  color: transparent;
-  letter-spacing: 0;
-}
-
 .hero-logo-o {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -45%);
-  height: 1.05em;
-  width: 1.05em;
+  height: 0.71em;
+  width: 0.71em;
   object-fit: contain;
   border-radius: 50%;
+  vertical-align: baseline;
 }
 
 .hero-logo-text {
