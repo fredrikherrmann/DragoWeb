@@ -18,7 +18,7 @@
   --text: #111111;
   --text-dim: #555555;
   --text-muted: #999999;
-  --accent: #0071bb;
+  --accent: #888888;
   --border: #d5d5d5;
   --border-dim: #e5e5e5;
   --mono: 'SF Mono', 'Menlo', 'Monaco', 'Cascadia Code', 'Courier New', monospace;
@@ -59,9 +59,10 @@ a:hover {
   left: 0;
   right: 0;
   z-index: 100;
-  background: rgba(245, 245, 245, 0.88);
+  background: linear-gradient(to bottom, rgba(220, 220, 220, 0.95), rgba(245, 245, 245, 0.88));
   backdrop-filter: blur(20px);
   -webkit-backdrop-filter: blur(20px);
+  border-bottom: 1px solid var(--border-dim);
 }
 
 .header-inner {
@@ -465,16 +466,9 @@ a:hover {
   50% { transform: translateX(-50%) translateY(6px); }
 }
 
-/* --- Grid lines (subtle background decoration) --- */
+/* --- Grid bg (disabled) --- */
 .grid-bg {
-  position: absolute;
-  inset: 0;
-  background-image:
-    linear-gradient(var(--border-dim) 1px, transparent 1px),
-    linear-gradient(90deg, var(--border-dim) 1px, transparent 1px);
-  background-size: 80px 80px;
-  opacity: 0.2;
-  pointer-events: none;
+  display: none;
 }
 
 /* --- Responsive --- */
