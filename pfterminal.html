@@ -23,11 +23,14 @@
       <button class="menu-toggle" aria-label="Meny" onclick="document.querySelector('.nav').classList.toggle('open')">
         <span></span><span></span><span></span>
       </button>
-      <ul class="nav">
-        <li><a href="index.html">Hem</a></li>
-        <li><a href="index.html#projekt">Projekt</a></li>
-        <li><a href="index.html#kontakt">Kontakt</a></li>
-      </ul>
+      <div class="header-right">
+        <ul class="nav">
+          <li><a href="index.html" data-i18n="nav_home">Hem</a></li>
+          <li><a href="index.html#projekt" data-i18n="nav_projects">Projekt</a></li>
+          <li><a href="index.html#kontakt" data-i18n="nav_contact">Kontakt</a></li>
+        </ul>
+        <div class="lang-selector" id="langSelector"></div>
+      </div>
     </div>
   </header>
 
@@ -40,7 +43,7 @@
         <p class="product-hero-subtitle">PERSONAL FINANCE TERMINAL</p>
       </div>
     </div>
-    <p class="product-hero-desc">
+    <p class="product-hero-desc" data-i18n="pf_hero_desc">
       Personlig ekonomi-app med terminal-estetik. Manuell inmatning
       för medvetenhet om varje transaktion. Lokal lagring,
       ingen molnsynk — du äger din data.
@@ -50,21 +53,21 @@
   <!-- Ladda ner -->
   <section class="section">
     <div class="section-header">
-      <p class="section-label">// Ladda ner</p>
-      <h2 class="section-title">Senaste versionen</h2>
+      <p class="section-label" data-i18n="pf_section_download">// Ladda ner</p>
+      <h2 class="section-title" data-i18n="pf_title_download">Senaste versionen</h2>
       <div class="section-divider"></div>
     </div>
     <div class="download-grid">
       <div class="download-card">
-        <h3 class="download-title">PFterminal för macOS</h3>
-        <p class="download-desc">Kräver macOS 12 eller senare. Installera genom att dra appen till Applications.</p>
-        <a href="downloads/PFterminal_0.1.0_aarch64.dmg" class="download-btn">Ladda ner .dmg</a>
+        <h3 class="download-title" data-i18n="pf_macos_title">PFterminal för macOS</h3>
+        <p class="download-desc" data-i18n="pf_macos_desc">Kräver macOS 12 eller senare. Installera genom att dra appen till Applications.</p>
+        <a href="downloads/PFterminal_0.1.0_aarch64.dmg" class="download-btn" data-i18n="pf_macos_btn">Ladda ner .dmg</a>
         <p class="download-meta">Version 0.1.0 · macOS (Apple Silicon) · Gratis</p>
       </div>
       <div class="download-card">
-        <h3 class="download-title">Instruktionsbok</h3>
-        <p class="download-desc">Komplett guide för att komma igång med PFterminal. Kategorier, sparande, kopplingar och mer.</p>
-        <a href="downloads/PFterminal_Instruktionsbok.pdf" class="download-btn">Ladda ner PDF</a>
+        <h3 class="download-title" data-i18n="pf_manual_title">Instruktionsbok</h3>
+        <p class="download-desc" data-i18n="pf_manual_desc">Komplett guide för att komma igång med PFterminal. Kategorier, sparande, kopplingar och mer.</p>
+        <a href="downloads/PFterminal_Instruktionsbok.pdf" class="download-btn" data-i18n="pf_manual_btn">Ladda ner PDF</a>
         <p class="download-meta">Svenska</p>
       </div>
     </div>
@@ -74,8 +77,8 @@
   <section class="projects-section" id="instruktionsbok">
     <div class="projects-inner">
     <div class="section-header">
-      <p class="section-label">// Instruktionsbok</p>
-      <h2 class="section-title">Kom igång med PFterminal</h2>
+      <p class="section-label" data-i18n="pf_section_manual">// Instruktionsbok</p>
+      <h2 class="section-title" data-i18n="pf_title_manual">Kom igång med PFterminal</h2>
       <div class="section-divider"></div>
     </div>
     <div class="manual">
@@ -162,6 +165,7 @@
     </div>
   </footer>
 
+  <script src="js/i18n.js"></script>
   <script src="js/main.js"></script>
 </body>
 </html>

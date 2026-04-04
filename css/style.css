@@ -115,6 +115,80 @@ a:hover {
   opacity: 1;
 }
 
+/* --- Header right (nav + lang) --- */
+.header-right {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+
+/* --- Language selector --- */
+.lang-selector {
+  display: flex;
+  align-items: center;
+  gap: 2px;
+  position: relative;
+}
+
+.lang-btn {
+  background: none;
+  border: none;
+  font-family: var(--mono);
+  font-size: 9px;
+  letter-spacing: 1px;
+  color: var(--text-muted);
+  cursor: pointer;
+  padding: 4px 5px;
+  transition: color 0.2s;
+}
+.lang-btn:hover {
+  color: var(--text);
+}
+.lang-btn.active {
+  color: var(--text);
+  font-weight: 600;
+}
+
+.lang-toggle {
+  background: none;
+  border: 1px solid var(--border);
+  font-family: var(--mono);
+  font-size: 9px;
+  letter-spacing: 1px;
+  color: var(--text-muted);
+  cursor: pointer;
+  padding: 4px 8px;
+  transition: all 0.2s;
+}
+.lang-toggle:hover {
+  color: var(--text);
+  border-color: var(--text);
+}
+
+.lang-dropdown {
+  display: none;
+  position: absolute;
+  top: 100%;
+  right: 0;
+  margin-top: 8px;
+  background: var(--bg);
+  border: 1px solid var(--border);
+  padding: 4px 0;
+  z-index: 200;
+  min-width: 48px;
+}
+.lang-dropdown.open {
+  display: flex;
+  flex-direction: column;
+}
+.lang-dropdown .lang-btn {
+  padding: 6px 12px;
+  text-align: left;
+}
+.lang-dropdown .lang-btn:hover {
+  background: var(--border-dim);
+}
+
 /* --- Hamburger (mobil) --- */
 .menu-toggle {
   display: none;
@@ -685,6 +759,13 @@ a:hover {
   }
   .menu-toggle {
     display: block;
+  }
+  .header-right {
+    flex-direction: row-reverse;
+    gap: 16px;
+  }
+  .lang-selector {
+    position: static;
   }
   .footer-inner {
     flex-direction: column;
