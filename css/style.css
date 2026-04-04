@@ -314,12 +314,14 @@ a:hover {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 24px;
+  max-width: 90%;
+  margin: 0 auto;
 }
 
 .project-card {
   background: var(--bg-card);
   border: 1px solid var(--border-dim);
-  padding: 48px;
+  padding: 36px;
   transition: border-color 0.3s;
 }
 .project-card:hover {
@@ -345,7 +347,6 @@ a:hover {
   font-weight: 600;
   letter-spacing: 4px;
   margin-bottom: 4px;
-  text-transform: uppercase;
 }
 
 .project-subtitle {
@@ -363,6 +364,21 @@ a:hover {
   border: 1px solid var(--border);
   padding: 3px 10px;
   margin-bottom: 24px;
+}
+
+.project-link {
+  display: block;
+  text-decoration: none;
+  color: inherit;
+  cursor: pointer;
+}
+
+.project-url {
+  display: block;
+  margin-top: 16px;
+  font-size: 11px;
+  color: var(--text-muted);
+  letter-spacing: 1px;
 }
 
 .project-desc {
@@ -491,6 +507,99 @@ a:hover {
 /* --- Grid bg (disabled) --- */
 .grid-bg {
   display: none;
+}
+
+/* --- Product page --- */
+.product-hero {
+  padding: 160px 5vw 80px;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.product-hero-inner {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  margin-bottom: 32px;
+}
+
+.product-hero-icon {
+  width: 80px;
+  height: 80px;
+  border-radius: 16px;
+  object-fit: contain;
+}
+
+.product-hero-title {
+  font-size: clamp(28px, 4vw, 40px);
+  font-weight: 600;
+  letter-spacing: 4px;
+}
+
+.product-hero-subtitle {
+  font-size: 10px;
+  color: var(--text-muted);
+  letter-spacing: 3px;
+  margin-top: 4px;
+}
+
+.product-hero-desc {
+  font-size: 13px;
+  color: var(--text-dim);
+  line-height: 2;
+  max-width: 540px;
+}
+
+.download-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 24px;
+  max-width: 90%;
+  margin: 0 auto;
+}
+
+.download-card {
+  background: var(--bg-card);
+  border: 1px solid var(--border-dim);
+  padding: 36px;
+}
+
+.download-title {
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: 2px;
+  margin-bottom: 12px;
+}
+
+.download-desc {
+  font-size: 12px;
+  color: var(--text-dim);
+  line-height: 2;
+  margin-bottom: 24px;
+}
+
+.download-btn {
+  display: inline-block;
+  padding: 12px 28px;
+  background: var(--text);
+  color: var(--bg);
+  font-family: var(--mono);
+  font-size: 11px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  text-decoration: none;
+  transition: opacity 0.3s;
+}
+.download-btn:hover {
+  opacity: 0.7;
+  color: var(--bg);
+}
+
+.download-meta {
+  margin-top: 16px;
+  font-size: 10px;
+  color: var(--text-muted);
+  letter-spacing: 1px;
 }
 
 /* --- Responsive --- */
