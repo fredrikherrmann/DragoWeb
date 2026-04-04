@@ -451,17 +451,28 @@ const langNames = {
   it: "IT", pt: "PT", nl: "NL", da: "DA", no: "NO", fi: "FI", pl: "PL"
 };
 
-// Detect language: URL param > localStorage > browser > default (sv)
+// Cookie helpers
+function setCookie(name, value) {
+  document.cookie = name + "=" + value + ";path=/;max-age=31536000;SameSite=Lax";
+}
+function getCookie(name) {
+  const match = document.cookie.match(new RegExp("(^| )" + name + "=([^;]+)"));
+  return match ? match[2] : null;
+}
+
+// Detect language: URL param > cookie > localStorage > browser > default (sv)
 function detectLanguage() {
-  // Check URL parameter first (?lang=en)
   const urlParams = new URLSearchParams(window.location.search);
   const urlLang = urlParams.get("lang");
   if (urlLang && translations[urlLang]) return urlLang;
 
+  const cookieLang = getCookie("drago-lang");
+  if (cookieLang && translations[cookieLang]) return cookieLang;
+
   try {
     const saved = localStorage.getItem("drago-lang");
     if (saved && translations[saved]) return saved;
-  } catch (e) { /* localStorage blocked */ }
+  } catch (e) {}
 
   const browserLang = (navigator.language || "sv").split("-")[0].toLowerCase();
   if (translations[browserLang]) return browserLang;
@@ -472,6 +483,7 @@ function detectLanguage() {
 // Apply translations
 function setLanguage(lang) {
   if (!translations[lang]) lang = "sv";
+  setCookie("drago-lang", lang);
   try { localStorage.setItem("drago-lang", lang); } catch (e) {}
 
   const t = translations[lang];
