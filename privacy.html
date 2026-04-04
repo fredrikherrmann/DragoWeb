@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Integritetspolicy — Drago</title>
+  <link rel="icon" type="image/svg+xml" href="assets/logo.svg">
+  <link rel="icon" type="image/x-icon" href="assets/favicon.ico">
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32x32.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="assets/apple-touch-icon.png">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <header class="header">
+    <div class="header-inner">
+      <a href="index.html" class="logo">
+        <span class="logo-text">Drago</span>
+        <img src="assets/logo.png" alt="Drago" class="logo-icon">
+      </a>
+      <button class="menu-toggle" aria-label="Meny" onclick="document.querySelector('.nav').classList.toggle('open')">
+        <span></span><span></span><span></span>
+      </button>
+      <div class="header-right">
+        <ul class="nav">
+          <li><a href="index.html" data-i18n="nav_home">Hem</a></li>
+        </ul>
+        <div class="lang-selector" id="langSelector"></div>
+      </div>
+    </div>
+  </header>
+
+  <section class="product-hero">
+    <div class="product-hero-inner">
+      <div>
+        <h1 class="product-hero-title" data-i18n="privacy_title">Integritetspolicy</h1>
+        <p class="product-hero-subtitle">DRAGO KONSULT AB</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="manual">
+
+      <div class="manual-chapter">
+        <h3 class="manual-heading" data-i18n="priv_h1">1. Ansvarig</h3>
+        <p>Drago Konsult AB (org.nr 559538-3778), Överåsvägen 11, 443 61 Stenkullen, är ansvarig för denna webbplats.</p>
+      </div>
+
+      <div class="manual-chapter">
+        <h3 class="manual-heading" data-i18n="priv_h2">2. Vilka uppgifter samlar vi in?</h3>
+        <p>Vi samlar inte in några personuppgifter. Inga formulär, ingen registrering, ingen spårning.</p>
+      </div>
+
+      <div class="manual-chapter">
+        <h3 class="manual-heading" data-i18n="priv_h3">3. Cookies</h3>
+        <p>Webbplatsen använder en enda cookie:</p>
+        <ul class="manual-list">
+          <li><strong>drago-lang</strong> — Sparar ditt val av språk. Funktionell cookie, ingen spårning. Giltig i 1 år.</li>
+        </ul>
+        <p>Vi använder inga tredjepartscookies, ingen analytics och ingen reklam.</p>
+      </div>
+
+      <div class="manual-chapter">
+        <h3 class="manual-heading" data-i18n="priv_h4">4. Tredjepartstjänster</h3>
+        <p>Webbplatsen hostas av GitHub Pages (GitHub Inc.). GitHub kan logga IP-adresser i sina serverloggar enligt deras egen integritetspolicy. Vi har ingen tillgång till dessa loggar.</p>
+      </div>
+
+      <div class="manual-chapter">
+        <h3 class="manual-heading" data-i18n="priv_h5">5. Dina rättigheter</h3>
+        <p>Eftersom vi inte samlar in personuppgifter finns inga uppgifter att begära ut, rätta eller radera. Du kan när som helst ta bort cookien drago-lang genom att rensa webbläsarens cookies.</p>
+      </div>
+
+      <div class="manual-chapter">
+        <h3 class="manual-heading" data-i18n="priv_h6">6. Kontakt</h3>
+        <p>Frågor om integritet? Kontakta oss på <a href="mailto:fredrik@drago.se">fredrik@drago.se</a>.</p>
+      </div>
+
+      <div class="manual-chapter">
+        <p style="color: var(--text-muted); font-size: 10px;">Senast uppdaterad: 2026-04-04</p>
+      </div>
+
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="footer-inner">
+      <span class="footer-text">&copy; 2026 Drago Konsult AB</span>
+      <ul class="footer-links">
+        <li><a href="index.html" data-i18n="nav_home">Hem</a></li>
+      </ul>
+    </div>
+  </footer>
+
+  <script src="js/i18n.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
