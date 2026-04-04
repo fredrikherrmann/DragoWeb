@@ -474,9 +474,6 @@ function detectLanguage() {
     if (saved && translations[saved]) return saved;
   } catch (e) {}
 
-  const browserLang = (navigator.language || "sv").split("-")[0].toLowerCase();
-  if (translations[browserLang]) return browserLang;
-
   return "sv";
 }
 
