@@ -246,7 +246,7 @@ a:hover {
 
 .hero-logo-text {
   font-family: var(--sans);
-  font-size: clamp(53px, 7.2vw, 91px);
+  font-size: clamp(61px, 8.28vw, 105px);
   font-weight: 400;
   letter-spacing: 0.3em;
   color: var(--text);
