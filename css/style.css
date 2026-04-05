@@ -431,6 +431,11 @@ a:hover {
   border: 1px solid var(--border-dim);
   padding: 36px;
   transition: border-color 0.3s;
+  display: flex;
+  flex-direction: column;
+}
+.project-card .project-urls {
+  margin-top: auto;
 }
 .project-card:hover {
   border-color: var(--text);
