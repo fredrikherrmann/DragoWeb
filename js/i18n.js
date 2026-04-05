@@ -16,7 +16,7 @@ const translations = {
     hero_scroll: "scroll",
     // Projekt
     section_projects: "// Projekt",
-    title_projects: "Våra program",
+    title_projects: "Program",
     dragors_tag: "Webbaserad",
     dragors_desc: "Rapportgenerator för bygg, projektledare och fukt- och skadebranschen. Komplett system med flerspråkigt stöd, PDF-export, mätprotokoll och smarta sök och integrationslösningar.",
     dragors_url: "Läs mer",
