@@ -37,12 +37,15 @@ Ersätter befintlig WordPress-sida på drago.se. LIVE sedan 2026-04-04.
 - Mobilanpassad (responsiva breakpoints)
 - Mjuka gradient-toningar mellan sektioner (TE-stil)
 - DNS: 4 A-poster (185.199.108-111.153) + CNAME www → fredrikherrmann.github.io
-- HTTPS: Enforce HTTPS väntar på DNS-check (konfigurerat 2026-04-04)
+- HTTPS: Enforce HTTPS aktiverat 2026-04-05 (krävde borttagning av gammal AAAA-post på drago.se)
+- Analytics: GoatCounter på alla sidor, dashboard: drago.goatcounter.com
 
 ---
 
-## På gång
-- **HTTPS** — Kryssa i "Enforce HTTPS" i GitHub Pages när DNS-checken blir grön
+## Viktiga lärdomar (tillägg)
+- GitHub Pages SSL-cert genereras inte om gamla AAAA-poster (IPv6) finns kvar på root-domänen
+- Logo.png har 10.25% transparent padding → använd 0.94em + vertical-align -0.13em för hero
+- Mät alltid bildens bounding box innan CSS-storlekar sätts
 
 ---
 
