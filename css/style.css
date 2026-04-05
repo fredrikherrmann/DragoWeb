@@ -910,7 +910,6 @@ a:hover {
     display: block;
   }
   .header-right {
-    flex-direction: row-reverse;
     gap: 16px;
   }
   .lang-selector {
