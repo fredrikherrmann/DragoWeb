@@ -486,6 +486,20 @@ a:hover {
   cursor: pointer;
 }
 
+.project-card-link {
+  text-decoration: none;
+  color: inherit;
+  cursor: pointer;
+}
+
+.project-url-action {
+  text-decoration: underline;
+  cursor: pointer;
+}
+.project-url-action:hover {
+  color: var(--text);
+}
+
 .project-urls {
   display: flex;
   justify-content: space-between;
