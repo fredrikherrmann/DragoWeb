@@ -13,29 +13,30 @@
 <stop offset="100%" stop-color="#fcee21"/>
 </linearGradient>
 <clipPath id="circleClip">
-<circle cx="340" cy="340" r="234"/>
+<circle cx="340" cy="340" r="268"/>
 </clipPath>
 </defs>
 
-<!-- Single circle: gradient fill + black stroke border -->
-<circle cx="340" cy="340" r="234" fill="url(#skyGrad)" stroke="#1a1a1a" stroke-width="36"/>
+<!-- Black outer ring -->
+<circle cx="340" cy="340" r="306" fill="#1a1a1a"/>
+<!-- White inner ring -->
+<circle cx="340" cy="340" r="274" fill="#ffffff"/>
+<!-- Gradient fill -->
+<circle cx="340" cy="340" r="268" fill="url(#skyGrad)"/>
 
 <!-- Scan lines -->
 <g clip-path="url(#circleClip)">
-<rect x="100" y="430" width="480" height="4" fill="#0d0221" opacity="0.5"/>
-<rect x="100" y="445" width="480" height="3.5" fill="#0d0221" opacity="0.45"/>
-<rect x="100" y="458" width="480" height="3" fill="#0d0221" opacity="0.4"/>
-<rect x="100" y="469" width="480" height="2.5" fill="#0d0221" opacity="0.35"/>
-<rect x="100" y="479" width="480" height="2" fill="#0d0221" opacity="0.3"/>
-<rect x="100" y="488" width="480" height="2" fill="#0d0221" opacity="0.25"/>
-<rect x="100" y="496" width="480" height="1.5" fill="#0d0221" opacity="0.2"/>
-<rect x="100" y="503" width="480" height="1.5" fill="#0d0221" opacity="0.18"/>
-<rect x="100" y="510" width="480" height="1.2" fill="#0d0221" opacity="0.15"/>
-<rect x="100" y="516" width="480" height="1" fill="#0d0221" opacity="0.12"/>
-<rect x="100" y="521" width="480" height="1" fill="#0d0221" opacity="0.1"/>
+<rect x="80" y="452" width="520" height="5" fill="#0d0221" opacity="0.5"/>
+<rect x="80" y="470" width="520" height="4.3" fill="#0d0221" opacity="0.45"/>
+<rect x="80" y="486" width="520" height="3.7" fill="#0d0221" opacity="0.4"/>
+<rect x="80" y="500" width="520" height="3.1" fill="#0d0221" opacity="0.35"/>
+<rect x="80" y="512" width="520" height="2.5" fill="#0d0221" opacity="0.3"/>
+<rect x="80" y="524" width="520" height="2.5" fill="#0d0221" opacity="0.25"/>
+<rect x="80" y="534" width="520" height="1.9" fill="#0d0221" opacity="0.2"/>
+<rect x="80" y="542" width="520" height="1.9" fill="#0d0221" opacity="0.18"/>
+<rect x="80" y="551" width="520" height="1.5" fill="#0d0221" opacity="0.15"/>
+<rect x="80" y="558" width="520" height="1.2" fill="#0d0221" opacity="0.12"/>
+<rect x="80" y="565" width="520" height="1.2" fill="#0d0221" opacity="0.1"/>
 </g>
-
-<!-- Terminal prompt -->
-<text x="340" y="325" text-anchor="middle" dominant-baseline="central" font-family="'Courier New', monospace" font-size="280" font-weight="700" fill="#0d0221">&gt;_</text>
 
 </svg>
