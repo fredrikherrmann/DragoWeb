@@ -16,7 +16,7 @@ const translations = {
     hero_scroll: "scroll",
     // Projekt
     section_projects: "// Projekt",
-    title_projects: "Program",
+    title_projects: "Projekt",
     dragors_tag: "Webbaserad",
     dragors_desc: "Rapportgenerator för bygg, projektledare och fukt- och skadebranschen. Komplett system med flerspråkigt stöd, PDF-export, mätprotokoll och smarta sök och integrationslösningar.",
     dragors_url: "Läs mer",
@@ -26,8 +26,8 @@ const translations = {
     pfterminal_more: "Läs mer",
     // Om oss
     section_about: "// Om",
-    about_p1: "Drago Konsult AB är ett svenskt företag baserat i Göteborgsområdet med verksamhet inom snickeri, teknisk konsultverksamhet och mjukvaruutveckling.",
-    about_p2: "Med en filosofi i kvalitet och enkelhet levererar vi hantverk, rådgivning och digitala lösningar — byggt för att hålla.",
+    about_p1: "Drago Konsult AB är ett svenskt företag baserat i Göteborgsområdet med verksamhet inom snickeri, mjukvaruutveckling och teknisk konsultverksamhet.",
+    about_p2: "",
     about_p3: "Drago är även delägare i bolag.",
     info_company: "Bolag",
     info_orgno: "Org.nr",
@@ -35,8 +35,8 @@ const translations = {
     info_contact: "Kontakt",
     // Kontakt
     section_contact: "// Kontakt",
-    title_contact: "Hör av dig",
-    contact_text: "Behöver du en snickare, konsult eller mjukvarulösning? Hör av dig:",
+    title_contact: "Kontaktuppgifter",
+    contact_text: "",
     contact_email: "E-post",
     contact_phone: "Telefon",
     contact_web: "Webb",

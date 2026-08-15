@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mjukvara — Drago</title>
+  <meta name="description" content="Mjukvaruprojekt från Drago Konsult AB.">
+  <link rel="icon" type="image/svg+xml" href="assets/logo.svg">
+  <link rel="icon" type="image/x-icon" href="assets/favicon.ico">
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32x32.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="assets/apple-touch-icon.png">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <header class="header">
+    <div class="header-inner">
+      <a href="index.html" class="logo">
+        <span class="logo-text">Drag<img src="assets/logo.png" alt="O" class="logo-o"></span>
+      </a>
+      <div class="header-right">
+        <ul class="nav">
+          <li><a href="index.html" data-i18n="nav_home">Hem</a></li>
+          <li><a href="index.html#projekt" data-i18n="nav_projects">Projekt</a></li>
+          <li><a href="index.html#kontakt" data-i18n="nav_contact">Kontakt</a></li>
+        </ul>
+        <button class="menu-toggle" aria-label="Meny" onclick="document.querySelector('.nav').classList.toggle('open')">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <section class="product-hero">
+    <div class="product-hero-inner">
+      <div>
+        <h1 class="product-hero-title">Mjukvara</h1>
+      </div>
+    </div>
+  </section>
+
+  <section class="projects-section">
+    <div class="projects-inner">
+      <div class="section-header">
+        <p class="section-label">// Program</p>
+        <h2 class="section-title">Utvecklade mjukvaror</h2>
+        <div class="section-divider"></div>
+      </div>
+      <div class="project-cards">
+        <a href="dragors.html" class="project-card project-card-link">
+          <div class="project-header">
+            <div>
+              <h3 class="project-name">DragoRS</h3>
+              <span class="project-subtitle">DRAGO REPORT SYSTEM</span>
+            </div>
+            <img src="assets/dragors-icon.png" alt="DragoRS" class="project-icon">
+          </div>
+          <span class="project-tag" data-i18n="dragors_tag">Webbaserad</span>
+          <p class="project-desc" data-i18n="dragors_desc">Rapportgenerator för bygg, projektledare och fukt- och skadebranschen. Komplett system med flerspråkigt stöd, PDF-export, mätprotokoll och smarta sök och integrationslösningar.</p>
+          <div class="project-tech">
+            <span class="tech-badge">React</span>
+            <span class="tech-badge">Node.js</span>
+            <span class="tech-badge">PostgreSQL</span>
+            <span class="tech-badge">Railway</span>
+            <span class="tech-badge">Vercel</span>
+          </div>
+          <div class="project-urls">
+            <span class="project-url project-url-action" data-href="https://www.dragors.com" data-external="true">www.dragors.com</span>
+            <span class="project-url" data-i18n="dragors_url">Läs mer</span>
+          </div>
+        </a>
+        <a href="pfterminal.html" class="project-card project-card-link">
+          <div class="project-header">
+            <div>
+              <h3 class="project-name">PFterminal</h3>
+              <span class="project-subtitle">PERSONAL FINANCE TERMINAL</span>
+            </div>
+            <img src="assets/pfterminal-icon.png" alt="PFterminal" class="project-icon">
+          </div>
+          <span class="project-tag" data-i18n="pfterminal_tag">Desktop</span>
+          <p class="project-desc" data-i18n="pfterminal_desc">Personlig ekonomi-app med terminal-estetik. Manuell inmatning för medvetenhet om varje transaktion. Lokal lagring, ingen molnsynk — du äger din data. Byggt med Tauri v2.</p>
+          <div class="project-tech">
+            <span class="tech-badge">Vanilla JS</span>
+            <span class="tech-badge">Tauri v2</span>
+            <span class="tech-badge">Rust</span>
+            <span class="tech-badge">macOS</span>
+          </div>
+          <div class="project-urls">
+            <span class="project-url project-url-action" data-href="downloads/PFterminal_0.1.0_aarch64.dmg" data-i18n="pfterminal_url">Ladda ner</span>
+            <span class="project-url" data-i18n="pfterminal_more">Läs mer</span>
+          </div>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="footer-inner">
+      <span class="footer-text">&copy; 2026 Drago Konsult AB</span>
+      <ul class="footer-links">
+        <li><a href="index.html" data-i18n="nav_home">Hem</a></li>
+        <li><a href="index.html#projekt" data-i18n="nav_projects">Projekt</a></li>
+        <li><a href="index.html#kontakt" data-i18n="nav_contact">Kontakt</a></li>
+        <li><a href="privacy.html">Integritetspolicy</a></li>
+      </ul>
+    </div>
+  </footer>
+
+  <script data-goatcounter="https://drago.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
+  <script src="js/i18n.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
