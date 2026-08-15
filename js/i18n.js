@@ -26,7 +26,7 @@ const translations = {
     pfterminal_more: "Läs mer",
     // Om oss
     section_about: "// Om",
-    about_p1: "Drago Konsult AB är ett svenskt företag baserat i Göteborgsområdet med verksamhet inom snickeri, mjukvaruutveckling och teknisk konsultverksamhet.",
+    about_p1: "Drago Konsult AB är ett svenskt företag baserat i Lerum med verksamhet inom snickeri, mjukvaruutveckling och teknisk konsultverksamhet.",
     about_p2: "",
     about_p3: "Drago är även delägare i bolag.",
     info_company: "Bolag",
