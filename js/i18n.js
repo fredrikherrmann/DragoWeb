@@ -9,7 +9,7 @@ const translations = {
     nav_contact: "Kontakt",
     nav_home: "Hem",
     // Hero
-    hero_tagline: "Snickeri · Konsult · Mjukvara",
+    hero_tagline: "Snickeri · Mjukvara · Konsult",
     hero_desc_1: "Snickeri, teknisk konsultverksamhet",
     hero_desc_2: "och mjukvaruutveckling.",
     hero_cta: "visa projekt",
