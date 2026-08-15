@@ -322,7 +322,7 @@ a:hover {
 /* --- Kategori-knappar --- */
 .category-buttons {
   display: flex;
-  gap: 80px;
+  gap: 120px;
   justify-content: center;
 }
 
@@ -331,7 +331,7 @@ a:hover {
   align-items: center;
   justify-content: center;
   gap: 8px;
-  padding: 14px 36px;
+  padding: 18px 36px;
   background: #d5d5d5;
   border: none;
   font-family: var(--mono);
@@ -913,9 +913,13 @@ a:hover {
   .hero-logo {
     gap: 12px;
   }
+  .category-buttons {
+    flex-direction: column;
+    gap: 12px;
+    align-items: center;
+  }
   .about-grid,
   .project-cards,
-  .category-buttons,
   .contact-grid,
   .download-grid,
   .feature-grid,
