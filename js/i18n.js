@@ -10,8 +10,8 @@ const translations = {
     nav_home: "Hem",
     // Hero
     hero_tagline: "Snickeri · Mjukvara · Konsult",
-    hero_desc_1: "Snickeri, teknisk konsultverksamhet",
-    hero_desc_2: "och mjukvaruutveckling.",
+    hero_desc_1: "Snickeri, mjukvaruutveckling",
+    hero_desc_2: "och teknisk konsultverksamhet.",
     hero_cta: "visa projekt",
     hero_scroll: "scroll",
     // Projekt
