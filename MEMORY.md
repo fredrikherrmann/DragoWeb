@@ -42,8 +42,8 @@ LIVE på drago.se via GitHub Pages sedan 2026-04-04.
   - Soffbord – Bonnie (björk, 3 bilder)
   - Hatthylla – Tokyo (björk, 3 bilder)
   - Bänk – Ute (furu, 3 bilder)
-  - Text: "Handbyggda möbler i massivt trä. Förfrågningar — fredrik@drago.se"
-- **mjukvara.html** — DragoRS + PFterminal kort, rubrik "Utvecklade mjukvaror"
+  - Text: "Handbyggda möbler i massivt trä. Förfrågningar → fredrik@drago.se"
+- **mjukvara.html** — DragoRS + PFterminal kort, rubrik "Utvecklade mjukvaror", sträck mellan "Mjukvara" och rubriken
 - **dragors.html** — DragoRS produktsida med features
 - **pfterminal.html** — PFterminal med nedladdning + instruktionsbok
 - **privacy.html** — Integritetspolicy
@@ -106,6 +106,19 @@ DragoWeb/
     └── PFterminal_Instruktionsbok.pdf
 ```
 
+### Mobilanpassning
+- Kategori-knappar: `flex-direction: column` + `gap: 12px` på mobil (768px breakpoint)
+- Desktop: `gap: 120px` mellan knapparna
+- Knappar: padding 18px 36px, grå bakgrund (#d5d5d5), "visa Snickeri →" med hover-pilanimation
+- Sektioner: min-height 50vh med vertikalt centrerat innehåll
+- Hero-avstånd: logga margin-bottom 32px, tagline margin-bottom 0
+
+### Loggo-export
+- Generera loggor genom att rendera i riktig webbläsare (Firefox) — INTE node-canvas/puppeteer (fel typsnitt)
+- Metod: öppna logo-export.html (font-size: 28vw), ta skärmbild, beskär med node-canvas
+- Loggor sparas på skrivbordet i mapp "Loggor" eller i `02 Bibliotek/DragoWeb Bibliotek/Loggor/`
+- Varianter: transparent, vit bg, OG 1200x630, banner 600x120, ikon 1024/512/180, SVG, favicon
+
 ## Viktiga lärdomar
 - GitHub Pages + CNAME = gratis hosting med auto-deploy vid git push
 - Logo som inline <img> i <span> med em-enheter = skalar perfekt med text
@@ -113,3 +126,5 @@ DragoWeb/
 - i18n.js överskriver HTML data-i18n-attribut — uppdatera BÅDA vid textändringar
 - Snickeribilder: sips -Z 1200 för nedskalning, kontrollera att alla har samma proportioner
 - EXIF-rotation kan ge fel orientering — verifiera efter sips-konvertering
+- Headless Chromium (puppeteer) renderar -apple-system med FEL typsnitt — använd riktig webbläsare + screencapture
+- Skriv ALDRIG "våra", "vårt", "vi" — Fredrik driver bolaget ensam
